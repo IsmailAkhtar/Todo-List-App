@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Roboto fonts embedded-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="resources\css\reset.min.css" />
+    <link rel="stylesheet" href="resources\css\style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Todo list app</title>
+  </head>
+  <body>
+    <header>
+      <input type="text" placeholder="Enter an activity.." id="item" />
+      <button id="add">
+        <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 309.059 309.059"
+          style="enable-background: new 0 0 309.059 309.059"
+          xml:space="preserve"
+        >
+          <g>
+            <path
+              class="fill"
+              d="M280.71,126.181h-97.822V28.338C182.889,12.711,170.172,0,154.529,0S126.17,12.711,126.17,28.338v97.843H28.359C12.722,126.181,0,138.903,0,154.529c0,15.621,12.717,28.338,28.359,28.338h97.811v97.843c0,15.632,12.711,28.348,28.359,28.348c15.643,0,28.359-12.717,28.359-28.348v-97.843h97.822c15.632,0,28.348-12.717,28.348-28.338C309.059,138.903,296.342,126.181,280.71,126.181z"
+            />
+          </g>
+        </svg>
+      </button>
+    </header>
+    <div class="container">
+      <!-- Incomplete tasks -->
+      <ul class="todo" id="todo"></ul>
+        <!-- Completed tasks -->
+        <ul class="todo" id="completed"></ul>
+    </div>
+    
+    <script src="resources\js\main.js"></script>
+  </body>
+</html>
